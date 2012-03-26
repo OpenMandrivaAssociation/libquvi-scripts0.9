@@ -3,8 +3,8 @@
 %define develname %mklibname -d quvi-scripts
 
 Name:           libquvi-scripts
-Version:        0.4.2
-Release:        %mkrel 1
+Version:        0.4.4
+Release:        1
 Summary:        Embedded lua scripts for parsing media details
 Group:          Networking/Other
 License:        LGPLv2+
