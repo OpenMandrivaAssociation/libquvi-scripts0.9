@@ -3,7 +3,7 @@
 %define develname %mklibname -d quvi-scripts
 
 Name:           libquvi-scripts
-Version:        0.4.7
+Version:        0.4.8
 Release:        1
 Summary:        Embedded lua scripts for parsing media details
 Group:          Networking/Other
@@ -32,5 +32,3 @@ included.
 %{_datadir}/%{name}
 %{_datadir}/pkgconfig/*.pc
 %{_mandir}/man7/*
-
-
