@@ -1,14 +1,14 @@
-%define major 6
-%define libname %mklibname quvi-scripts %major
-%define develname %mklibname -d quvi-scripts
+%define major	6
+%define libname	%mklibname quvi-scripts %major
+%define devname	%mklibname -d quvi-scripts
 
+Summary:        Embedded lua scripts for parsing media details
 Name:           libquvi-scripts
 Version:        0.4.10
-Release:        1
-Summary:        Embedded lua scripts for parsing media details
+Release:        2
 Group:          Networking/Other
 License:        LGPLv2+
-URL:            http://quvi.sourceforge.net/
+Url:            http://quvi.sourceforge.net/
 Source0:        http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
@@ -16,6 +16,14 @@ BuildArch:	noarch
 libquvi-scripts contains the embedded lua scripts that libquvi uses for
 parsing the media details. Some additional utility scripts are also
 included.
+
+%package devel
+Summary:	The pkgconfig for %{name}
+Group:		Development/Other
+Requires:	%{name} = %{version}-%{release}
+
+%description devel
+The pkgconfig for %{name}.
 
 %prep
 %setup -q
@@ -30,5 +38,8 @@ included.
 %files
 %doc ChangeLog COPYING README
 %{_datadir}/%{name}
-%{_datadir}/pkgconfig/*.pc
 %{_mandir}/man7/*
+
+%files devel
+%{_datadir}/pkgconfig/*.pc
+
