@@ -1,7 +1,3 @@
-%define major	6
-%define libname	%mklibname quvi-scripts %major
-%define devname	%mklibname -d quvi-scripts
-
 Summary:        Embedded lua scripts for parsing media details
 Name:           libquvi-scripts
 Version:        0.4.10
