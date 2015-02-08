@@ -3,8 +3,8 @@
 
 Summary:        Embedded lua scripts for parsing media details
 Name:           %{oname}%{api}
-Version:	0.9.20131104
-Release:	10
+Version:	0.9.20131130
+Release:	1
 Group:		Networking/Other
 License:        LGPLv2+
 Url:            http://quvi.sourceforge.net/
@@ -30,7 +30,7 @@ The pkgconfig for %{name}.
 %setup -q -n %{oname}-%{version}
 
 %build
-%configure2_5x --libdir=%{_datadir}
+%configure --libdir=%{_datadir}
 %make
 
 %install
