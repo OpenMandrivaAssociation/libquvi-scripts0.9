@@ -10,7 +10,7 @@ License:	LGPLv2+
 Url:		http://quvi.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/quvi/%{oname}-%{version}.tar.xz
 BuildArch:	noarch
-Obsoletes:	%{oname} >= 0.9
+Obsoletes:	%{oname} = 0.9
 
 %description
 libquvi-scripts contains the embedded lua scripts that libquvi uses for
@@ -21,7 +21,7 @@ included.
 Summary:	The pkgconfig for %{name}
 Group:		Development/Other
 Requires:	%{name} = %{version}-%{release}
-Obsoletes:	%{oname}-devel >= 0.9
+Obsoletes:	%{oname}-devel = 0.9
 
 %description devel
 The pkgconfig for %{name}.
