@@ -1,14 +1,14 @@
-%define	oname	libquvi-scripts
-%define	api	0.9
+%define oname libquvi-scripts
+%define api 0.9
 
-Summary:        Embedded lua scripts for parsing media details
-Name:           %{oname}%{api}
+Summary:	Embedded lua scripts for parsing media details
+Name:		%{oname}%{api}
 Version:	0.9.20131130
-Release:	1
+Release:	2
 Group:		Networking/Other
-License:        LGPLv2+
-Url:            http://quvi.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/quvi/%{oname}-%{version}.tar.xz
+License:	LGPLv2+
+Url:		http://quvi.sourceforge.net/
+Source0:	http://downloads.sourceforge.net/quvi/%{oname}-%{version}.tar.xz
 BuildArch:	noarch
 Obsoletes:	%{oname} >= 0.9
 
